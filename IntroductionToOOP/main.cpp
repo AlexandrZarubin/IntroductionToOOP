@@ -102,16 +102,7 @@ public:
 		set_y(y);
 		return *this;
 	}
-	std::istream& operator>>(std::istream& is)
-	{
-		double x, y;
-		is >> x >> y;
-		/*obj.set_x(x);
-		obj.set_y(y);*/
-		is>>this->x;
-		is>>this->y;
-		return is;
-	}
+
 };
 Point operator+(const Point& Left, const Point& right)
 {
@@ -150,15 +141,15 @@ std::ostream& operator<<(std::ostream& os, const Point& obj)
 	return os << " X = " << obj.get_x() << "\tY = " << obj.get_y();
 }
 
-//std::istream& operator>>(std::istream& is,Point& obj)
-//{
-//	 double x, y;
-//	 is >> x >> y;
-//	 /*obj.set_x(x);
-//	 obj.set_y(y);*/
-//	 obj(x, y);
-//	 return is;
-//}
+std::istream& operator>>(std::istream& is,Point& obj)
+{
+	 double x, y;
+	 is >> x >> y;
+	 /*obj.set_x(x);
+	 obj.set_y(y);*/
+	 obj(x, y);
+	 return is;
+}
 //#define STRUCT_POINT
 //#define DISTANCE_CHECK
 //#define CONSTRUCTORS_CHECK
