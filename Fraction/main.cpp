@@ -97,9 +97,6 @@ class Fraction
 			return *this;
 		}
 		
-
-
-		
 		//2. Increment/Decrement:		 ++/--;
 		// ++
 		Fraction& operator++()		//prefix
@@ -126,7 +123,8 @@ class Fraction
 			return old;
 		}
 		//
-		
+		//3. Compound assignments : +=, -=, *=, /=;
+
 
 		//Methods
 		void print()const
@@ -144,7 +142,7 @@ class Fraction
 		//перевод в неправильную дробь для бул
 		Fraction& NoRight()
 		{
-			numerator += integer * denominator + numerator;
+			numerator += integer * denominator;
 			integer = 0;
 			return *this;
 		}
@@ -337,7 +335,6 @@ class Fraction
 		object.set_integer(integer);
 		object.set_numerator(numerator);
 		object.set_denominator(denominator);
-		//obj(x, y);
 		return is;
 	}
 
