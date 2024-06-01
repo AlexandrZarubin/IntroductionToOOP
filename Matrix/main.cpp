@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 class Matrix;
 Matrix operator+(const Matrix& left, const Matrix& right);
@@ -200,7 +200,7 @@ Matrix operator+(const Matrix& left, const Matrix& right)
 	}
 	else
 	{
-		cerr << "Ðàçìåðû ìàòðèöû íå ñîâïàäàþò" << endl;
+		cerr << "Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚" << endl;
 		//return 0;
 	}
 	
@@ -223,7 +223,7 @@ Matrix operator-(const Matrix& left, const Matrix& right)
 	}
 	else
 	{
-		cerr << "Ðàçìåðû ìàòðèöû íå ñîâïàäàþò" << endl;
+		cerr << "Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚" << endl;
 		//return 1;
 	}
 }
@@ -246,7 +246,7 @@ Matrix operator*(const Matrix& left, const Matrix& right)
 	}
 	else
 	{
-		cerr << "ñòîëáèêè ëåâîé ìàòðèöû äîæíû ñîïàäàòü ñî ñòðîêàìè ïðàâîé ìàòðèöû" << endl;
+		cerr << "ÑÑ‚Ð¾Ð»Ð±Ð¸ÐºÐ¸ Ð»ÐµÐ²Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ Ð´Ð¾Ð¶Ð½Ñ‹ ÑÐ¾Ð¿Ð°Ð´Ð°Ñ‚ÑŒ ÑÐ¾ ÑÑ‚Ñ€Ð¾ÐºÐ°Ð¼Ð¸ Ð¿Ñ€Ð°Ð²Ð¾Ð¹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹" << endl;
 		//return 0;
 	}
 }
@@ -266,7 +266,7 @@ Matrix operator/(const Matrix& left, const Matrix& right)
 	}
 	else
 	{
-		cerr << "Ðàçìåðû ìàòðèöû íå ñîâïàäàþò" << endl;
+		cerr << "Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ñ‹ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚" << endl;
 		//return 0;
 	}
 }
