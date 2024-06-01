@@ -62,8 +62,8 @@ public:
 	//			Operators:
 	String& operator=(const String &other)
 	{
-		if (this->str)delete[]str;
 		if (this == &other)return *this;
+		if (this->str)delete[]str;
 		this->size = length(other.str);
 		str = new char[size + 1];
 		strcopy(this->str, other.str);
